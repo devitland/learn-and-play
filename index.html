@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<title>Учись-Играй</title>
+	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="header">		
+		<h1>учись-играй</h1>
+	  	<p>Проверь свои знания грамматики и лексики английкого языка с помощью интерактивных онлайн тестов.</p>
+	</div>
+	<div class="row">
+	  	<div class="column">
+		  	<h2>Определить уровень словарного запаса</h2>
+		  	<p>
+		  		Пройди тест на Scratch, помоги самолету долететь до аэропорта и узнай свой уровень словарного запаса английского языка
+		  	</p>
+		  	<div>
+		  		<iframe src="https://scratch.mit.edu/projects/452595607/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="box-shadow: 0 4px 8px 0 rgb(162, 66, 9);"></iframe>
+	  		</div>
+	  		<a target="_blank" href="https://scratch.mit.edu/projects/452595607" class="button"/>Открыть Scratch</a>
+	 	</div>
+
+	  	<div class="column">
+		  	<h2>Пройти лексико-грамматический тест</h2>
+		  	<p>В каждом задании лишь один правильный ответ, ответь на 10 вопросов, и узнай свой уровень владения английским языком.</p>
+		  	<p id="result"></p>					
+			<p id="question"></p>
+				
+			<button onclick="check(1)" class="button" id="option1"></button>		
+			<button onclick="check(2)" class="button" id="option2"></button>		
+			<button onclick="check(3)" class="button" id="option3"></button>		
+			<button onclick="check(4)" class="button" id="option4"></button>
+			
+			<button id="start" class="button" onclick="check(0)">Приступить к тесту</button>
+			<script type="text/javascript"> let curent_url = document.URL; document.write("<a id='end' class='button' href='" + curent_url + "'>Еще раз</a>"); </script>	
+	  	</div>
+
+		<div class="column">
+		  	<h2>Изучаем разговорный английский - игра "Магический шар"</h2>
+		  	<p>Задай свой вопрос и получи предсказание на русском и английском языках.</p>
+		  	<p> How can I help you today? </p>
+			<input type="text" placeholder="enter a question"></input>			
+			<div class="magic-ball">
+				<img style="width: 350px;" src="img/magic-ball1.png" alt="magic ball">
+				<p id="answerContainer"></p>
+			</div>
+			<button class="button" id="answerButton"> Answer me </button>	
+	  	</div>	  	
+	</div>
+	
+	<br>
+	<h2 style="text-align: center;">Наша команда</h2>
+	<br>
+
+	<div class="row">
+		<div class="column">
+		   	<div class="card">
+		      <img src="img/1.jpg" alt="Дима" style="width:100%">
+		      <div class="container">
+		        <h2>Будько Дмитрий</h2>
+		        <p class="title">CEO & Founder</p>
+		        <p>Основатель, english-guru. </p>
+		        
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="img/4.jpg" alt="Виктор" style="width:100%">
+		      <div class="container">
+		        <h2>Хилько Виктор</h2>
+		        <p class="title">Art Director</p>
+		        <p>Pазработка спрайтов, стиля.</p>	        
+		      </div>
+		    </div>
+		  </div>
+  
+		  <div class="column">
+		    <div class="card">
+		      <img src="img/3.jpg" alt="Артемий" style="width:100%">
+		      <div class="container">
+		        <h2>Зинькович Артемий </h2>
+		        <p class="title">Front-end developer</p>
+		        <p>Разработчик игры "Магический шар".</p>		        
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="img/2.jpg" alt="Артур" style="width:100%">
+		      <div class="container">
+		        <h2>Бельский Артур</h2>
+		        <p class="title">Scratch developer</p>
+		        <p>Разработчик игры "Летим на Бали".</p>	        
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="img/5.jpg" alt="Никита" style="width:100%">
+		      <div class="container">
+		        <h2>Герман Никита</h2>
+		        <p class="title">Front-end developer</p>
+		        <p>Разработчик теста и сайта.</p>	        
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	<div class="footer">
+	  	<p>Разработка компании "DEVT8", 2020</p>					
+	</div>
+	<script src="script-test.js"></script>
+	<script src="script-magic-ball.js"></script>
+</body>
+</html>
